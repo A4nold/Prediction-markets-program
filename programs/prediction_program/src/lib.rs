@@ -1,7 +1,7 @@
 use anchor_lang::prelude::*;
 use anchor_spl::token::{self, Mint, Token, TokenAccount, Transfer};
 
-declare_id!("FakEPgm1111111111111111111111111111111111111"); // TODO: replace after deploy
+declare_id!("Dj4ixELjkDEyUtBBXwWZ22ZsjMSTtheraYynivmWto1Y"); // TODO: replace after deploy
 
 // ----------------------------
 // Config
@@ -449,8 +449,6 @@ pub vault: Account<'info, TokenAccount>,
 seeds = [b"vault_auth_v2", market.key().as_ref()],
 bump
 )]
-/// CHECK: This is a program-derived account (PDA) used only as the signing authority for the vault.
-/// for the vault token account. Its address is validated by the seeds constraint.
 pub vault_authority: UncheckedAccount<'info>,
 
 pub collateral_mint: Account<'info, Mint>,
