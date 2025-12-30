@@ -1074,7 +1074,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "prediction_program"
+name = "prediction_program_v2"
 version = "0.1.0"
 dependencies = [
  "anchor-lang",

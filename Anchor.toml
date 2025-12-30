@@ -6,13 +6,16 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-prediction_program = "inFHLTBrsGQXLbFguPUzcd8S1rWiXNi1coG11VWt65L"
+prediction_program_v2 = "7zGEj8SHZ6bDzfFJwfJxSZWvyMEoXtX5nTf6Wk4vFzj5"
+
+[programs.devnet]
+prediction_program_v2 = "7zGEj8SHZ6bDzfFJwfJxSZWvyMEoXtX5nTf6Wk4vFzj5"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]
